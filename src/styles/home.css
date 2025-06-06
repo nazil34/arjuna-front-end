@@ -1,0 +1,12 @@
+.bg-glass {
+  background: linear-gradient(135deg, #2303b5, #4b20ff);
+  color: white;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #C6F806, #33CCFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
