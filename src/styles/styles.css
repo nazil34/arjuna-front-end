@@ -139,68 +139,52 @@ h1, h2, h3, .brand-name {
   }
 }
 
-/* Style heading highlight */
-.highlight-blue {
-  color: #2972fe;
-}
-
-/* Tombol hijau neon */
-.btn-neon {
-  background-color: #ccff00;
-  border: none;
-}
-
-/* Tombol garis putus-putus */
-.btn-dashed {
-  border: 2px dashed #fff;
-  color: white;
-  position: relative;
-  font-weight: 500;
-}
-
-/* Tambahkan ikon "coretan kecil" */
-.btn-dashed::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 20px;
-  height: 20px;
- 
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-/* Gambar berlapis */
-.image-stack {
-  position: relative;
-  display: inline-block;
-}
-
-.image-stack .main-img {
-  border-radius: 16px;
+.custom-glass-box {
+  background-color: #C6F806;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
   border: 2px solid white;
-  z-index: 2;
-  position: relative;
-  width: 100%;
-  max-width: 320px;
+  box-shadow: 5px 6px 0px #ffffff, 6px 8px 0px #000000;
+  color: #3366FF;
 }
 
-.image-stack .sketch-bg {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  z-index: 1;
-  width: 100%;
-  max-width: 320px;
-  opacity: 0.5;
+.custom-title {
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 2.5rem;
+  color: #3366FF;
 }
 
-/* Pattern silang bawah */
-.cross-pattern {
-  position: absolute;
-  bottom: -20px;
-  right: 0;
-  width: 100px;
-  opacity: 0.5;
+.custom-paragraph {
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 500;
+  color: #3366FF;
+}
+
+
+.nav-pill-custom {
+  background-color: #111;
+  border: 1px solid #b6ff00;
+  border-radius: 3rem;
+  display: inline-block;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.nav-pill-custom .nav-pills {
+  margin: 0;
+}
+
+.nav-pill-custom .nav-link.active-custom {
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-pill-custom .nav-link.active-custom:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }

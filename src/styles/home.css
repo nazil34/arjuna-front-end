@@ -1,3 +1,4 @@
+
 .bg-glass {
   background: linear-gradient(135deg, #2303b5, #4b20ff);
   color: white;
@@ -10,3 +11,36 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+.bg-orange {
+  background-color: #CC6344 !important;
+}
+
+
+.btn-neon-green {
+  background-color: #C6F806;
+  color: #0000FF;
+  font-weight: bold;
+  border-radius: 9999px; /* pill */
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-neon-green:hover {
+  background-color: #b2e500;
+  color: #0000cc;
+}
+
+.shadow-black {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.footer-red {
+  background-color: #cc0000;
+  border: 2px solid white;
+  border-radius: 1rem;
+  max-width: 100%;
+}
+
+
