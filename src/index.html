@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" scroll-behavior: smooth;>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,14 +13,15 @@
     <title>Arjuna</title>
   </head>
   <body>
-    <header class="bg-black">
+    <header class="bg-black sticky-header">
       <div class="main-header container">
-        <a class="brand-name d-flex align-items-center gap-2" href="#/">
-          <img src="images/favicon.png" alt="Arjuna Logo" style="height: 32px;" />
-          <span>Arjuna</span>
-        </a>
+        <a class="brand-name d-flex align-items-center gap-2"> 
+        <div class="bg-white rounded-circle d-flex justify-content-center align-items-center" style="height: 40px; width: 40px;">
+          <img src="images/favicon.png" alt="Arjuna Logo" style="height: 24px; width: 24px;" />
+        </div>
+      </a>
 
-        <nav class="nav-pill-custom d-flex justify-content-center my-4">
+        <nav class="nav-pill-custom sticky-nav d-flex justify-content-center my-1">
         <ul class="nav nav-pills gap-3 px-4 py-2">
           <li class="nav-item"><a class="nav-link active-custom" href="#background">Background</a></li>
           <li class="nav-item"><a class="nav-link active-custom" href="#how">How it Work</a></li>
@@ -29,16 +30,23 @@
         </ul>
       </nav>
 
-        <nav id="navigation-drawer" class="navigation-drawer">
-          <ul id="nav-list" class="nav-list">
-            <div class="d-flex gap-2">
-            <a href="#/register" class="btn btn-outline-light rounded-pill px-3 py-1 fw-semibold ">Register</a>
-            <a href="#/signin" class="btn btn-primary rounded-pill px-3 py-1 fw-semibold">Sign in</a>
-          </div>
-          </ul>
-        </nav>
+       <!-- Untuk desktop -->
+      <div class="d-none d-md-flex gap-2 sticky-nav">
+        <a href="#/register" class="btn btn-outline-light rounded-pill px-3 py-1 fw-semibold">Register</a>
+        <a href="#/signin" class="btn btn-primary rounded-pill px-3 py-1 fw-semibold">Sign in</a>
+      </div>
 
-        <button id="drawer-button" class="drawer-button">☰</button>
+      <!-- Untuk mobile (drawer) -->
+      <nav id="navigation-drawer" class="navigation-drawer d-md-none">
+        <ul class="nav-list list-unstyled">
+          <li><a href="/" class="drawer-link">Home</a></li>
+          <li><a href="#/register" class="drawer-link">Register</a></li>
+          <li><a href="#/signin" class="drawer-link">Sign In</a></li>
+        </ul>
+      </nav>
+  
+
+        <button id="drawer-button" class="drawer-button text-white bg-transparent border-0">☰</button>
       </div>
     </header>
 

@@ -44,3 +44,15 @@
 }
 
 
+.wayang-wrapper {
+  position: relative;
+}
+
+.pattern-decor {
+  position: absolute;
+  bottom: -20px;
+  right: -100px;
+  width: 390px; /* atur sesuai kebutuhan */
+
+  z-index: 1;
+}

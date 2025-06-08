@@ -17,13 +17,17 @@ export default class HomePage {
               </div>
             </div>
 
-            <!-- Gambar ilustrasi -->
-            <div class="col-md-4 text-center mt-4 mt-md-0 position-relative">
-              <img src="images/decoration-image-1.png" class="img-fluid mb-2" alt="Wayang Image" style="max-height: 300px;" />
-              <!-- Gambar pagar di bawah -->
-              <img src="images/decoration-overview-1.png" class="img-fluid w-100" alt="Pattern Border" style="max-width: 100px;" />
-            </div>
+            <div class="wayang-wrapper col-md-4 text-center mt-4 mt-md-0 position-relative">
+            <!-- Gambar utama wayang -->
+            <img src="images/decoration-image-1.png" class="img-fluid mb-2 position-relative z-2" alt="Wayang Image" style="max-height: 300px;" />
+
+            <!-- Gambar pagar dekoratif -->
+            <img src="images/decoration-overview-1.png" class="pattern-decor position-absolute" alt="Pattern Border"/>
           </div>
+
+            
+          </div>
+
         </div>
       </section>
 
@@ -32,8 +36,7 @@ export default class HomePage {
           <div class="p-4 p-md-5 rounded-4 bg-glass text-white position-relative shadow-lg border border-2 border-white">
             <!-- Icon atas -->
             <img src="images/star.png" class="position-absolute top-0 start-50 translate-middle-y" style="height: 65px;" alt="Star Icon">
-            <img src="" class="position-absolute top-0 end-0 translate-middle-x" style="height: 30px;" alt="Dot Icon">
-
+           
             <h2 class="fw-bold text-gradient mb-3">Wayang in the Digital Era – Preserving What’s Being Forgotten</h2>
             <p class="mb-0">
               Interest among younger generations in wayang is steadily declining due to the lack of engaging and easy-to-understand learning methods—even 75% of wayang characters are at risk of being forgotten within a generation.
@@ -66,15 +69,15 @@ export default class HomePage {
               </div>
 
               <!-- Dekorasi: spiral garis -->
-              <div class="position-absolute" style="top: 100px; left: 90%; transform: translateX(-50%);">
-                <img src="images/spiral.png" alt="spiral" style="width: 40px;">
+              <div class="icon position-absolute" style="top: 100px; left: 90%; transform: translateX(-50%);">
+                <img src="images/redarrow.png" alt="spiral" style="width: 100px;">
               </div>
             </div>
 
             <!-- Kanan: Gambar Wayang -->
             <div class="col-md-6 mt-4 mt-md-0 text-center position-relative z-1">
               <div class="d-flex justify-content-center gap-2 flex-wrap">
-                <img src="images/triowayang.png" class="img-fluid rotated-img" alt="Wayang" style="max-width: 450px;"
+                <img src="images/triowayang.png" class="img-fluid rotated-img" alt="Wayang" style="max-width: 500px;"
               </div>
             </div>
           </div>
@@ -86,6 +89,11 @@ export default class HomePage {
       <div class="container">
         <!-- Judul dan deskripsi -->
         <div class="text-center mb-5">
+
+         <!-- circle between phases -->
+              <img src="images/circle.png" class="icon img-fluid" alt="arrow" style="height: 70px;">
+            
+          
           <h2 class="fw-bold bg-white text-dark px-4 py-2 rounded-pill d-inline-block" style="font-family: 'Dela Gothic One', cursive;">
             Building the Next Chapter of Arjuna
           </h2>
@@ -107,14 +115,14 @@ export default class HomePage {
                 We'll launch a basic version of Arjuna with image recognition for 12 wayang characters.
                 Each character will display short-form stories and animations. Core battle game logic will also be released, centered around a simple educational battle game.
               </p>
-              <img src="images/bintang.png" class="position-absolute" style="width: 20px; bottom: -10px; right: -10px;" alt="bintang">
+              <img src="images/redstar.png" class="position-absolute" style="width: 67px; bottom: -5px; right: -10px;" alt="bintang">
             </div>
           </div>
 
           <!-- Arrow between phases -->
           <div class="col-md-2 d-none d-md-block">
             <div class="d-flex justify-content-center align-items-center h-100">
-              <img src="images/arrow-dashed.png" class="img-fluid" alt="arrow" style="height: 50px;">
+              <img src="images/arrow.png" class="img-fluid" alt="arrow" style="height: 30px;">
             </div>
           </div>
 
@@ -129,14 +137,14 @@ export default class HomePage {
                 Partnerships with cultural institutions will be explored to ensure a digital gateway. 
                 Hand-in-hand, we'll introduce Quizzes, AR missions, and special content.
               </p>
-              <img src="images/petir.png" class="position-absolute" style="width: 30px; bottom: -10px; left: -10px;" alt="petir">
+              <img src="images/lightning.png" class="position-absolute" style="width: 30px; bottom: -10px; left: -10px;" alt="petir">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION: Team Arjuna -->
+    <!-- SECTION 4: Team Arjuna -->
     <section id="team" class="bg-black text-white py-5 position-relative overflow-hidden">
 
        <div class="container d-flex justify-content-center align-items-center" style="min-height: 40vh;">
@@ -150,8 +158,8 @@ export default class HomePage {
       </div>
     </div>
 
-
         <div class="row g-4 justify-content-center">
+        
       <!-- Team Member Card 1 -->
       <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="text-center my-3">
