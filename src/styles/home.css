@@ -56,3 +56,82 @@
 
   z-index: 1;
 }
+
+
+
+
+/* Tambahan efek shadow tebal untuk phase badge */
+.shadow {
+  box-shadow: 4px 4px 0px #000;
+}
+
+/* Tambahan untuk layout mobile */
+@media screen and (max-width: 768px) {
+  #plan .row {
+    text-align: center;
+  }
+
+  #plan .col-md-5 {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* card phase*/
+.phase-card {
+  max-width: 420px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Judul badge */
+.phase-badge {
+  background-color: #C6F806;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50rem;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+/* Shadow tebal bawah kanan */
+.shadow-custom {
+  box-shadow: 5px 5px 0px #000;
+}
+
+/* Box Deskripsi */
+.phase-content {
+  background-color: #2057FF; /* warna biru latar */
+  border: 2px dashed #fff;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Bintang Dekorasi */
+.star-decoration {
+  position: absolute;
+  width: 40px;
+  z-index: 1;
+}
+
+.star-1 {
+  width: 55px;
+  right: -10px;
+  bottom: -10px;
+}
+
+.star-2 {
+  width: 55px;
+  bottom: -10px;
+  right : -10px;
+}
+
+.circle-icon {
+  margin-bottom: 20px;
+  height: 70px;
+}

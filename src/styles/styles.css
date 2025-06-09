@@ -121,38 +121,23 @@ h1, h2, h3, .brand-name {
 
 /* Write your styles more here */
 
-/* Untuk layar kecil (mobile) */
 @media screen and (max-width: 1000px) {
   .nav-pill-custom {
     display: none !important;
   }
-
   .icon {
     display: none !important;
   }
-
-  .navigation-drawer {
-    display: block;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-
-  .navigation-drawer.open {
-    transform: translateX(0);
-  }
-
-  .drawer-button {
-    display: block;
-  }
 }
 
-/* Untuk layar besar (desktop/tablet landscape ke atas) */
-@media screen and (min-width: 1001px) {
+
+@media screen and (width > 1000px) {
+
   .sticky-header {
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #000;
+    background-color: #000; /* atau bg sesuai header kamu */
   }
 
   .sticky-nav {
@@ -161,19 +146,36 @@ h1, h2, h3, .brand-name {
     z-index: 999;
   }
 
-  .nav-pill-custom {
-    display: flex !important;
+  .navigation-drawer {
+    min-height: auto;
+    width: auto;
+    padding: 0;
+    
+    background-color: transparent;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: static;
+    box-shadow: none;
+    transform: translateX(0);
+
+    
+  }
+  
+
+  .nav-list {
+    flex-direction: row;
   }
 
-  .navigation-drawer {
-    display: none !important;
+  .nav-list li a {
+    display: inline-block;
   }
 
   .drawer-button {
-    display: none !important;
+    display: none;
   }
 }
-
 
 .custom-glass-box {
   background-color: #C6F806;
