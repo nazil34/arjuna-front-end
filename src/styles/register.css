@@ -1,0 +1,87 @@
+.register-section {
+  background-color: #000000;
+  color: white;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.register-box {
+  background: #2E47FF;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+  box-shadow: 0 0 0 6px white, 0 15px 25px rgba(255, 255, 255, 0.25);
+
+}
+
+.icon-star {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.icon-circle {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 90px;
+}
+
+.icon-spiral {
+  position: absolute;
+  bottom: -5px;
+  right: -20px;
+  width: 150px;
+}
+
+.pattern-tag {
+  position: absolute;
+  left: 0;         /* Geser ke kanan */
+  top: 40%;         /* Posisi vertikal di tengah */
+  transform: translateY(-50%); /* Pusatkan secara vertikal */
+  max-width: 600px; /* Sesuaikan ukuran bila perlu */
+  z-index: 1;
+}
+
+
+.icon-star img {
+  width: 60px;
+}
+
+
+.title {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #D1FF00;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #dcdcdc;
+}
+
+.form-label {
+  color: #D1FF00;
+  font-weight: 600;
+}
+
+.btn-start {
+  background-color: #D1FF00;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.btn-start:hover {
+  background-color: #c0f000;
+}
+
+.wayang-image {
+  max-height: 360px;
+  border-radius: 16px;
+  object-fit: cover;
+}

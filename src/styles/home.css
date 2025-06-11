@@ -31,6 +31,19 @@
   background-color: #b2e500;
   color: #0000cc;
 }
+.btn-neon-enter {
+  background-color: #C6F806;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 9999px; /* pill */
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-neon-enter:hover {
+  background-color: #b2e500;
+  color: #0000cc;
+}
 
 .shadow-black {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);

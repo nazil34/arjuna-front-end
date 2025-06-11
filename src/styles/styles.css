@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  background-color: #000 !important;
+  color: #fff;
+}
+
 body {
   font-family: 'Arial', sans-serif;
 }
@@ -228,4 +233,6 @@ h1, h2, h3, .brand-name {
 }
 
 
-
+footer {
+  background-color: #000;
+}

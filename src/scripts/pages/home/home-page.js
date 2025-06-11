@@ -13,7 +13,7 @@ export default class HomePage {
               </h1>
               
               <div class="d-flex gap-3 flex-column flex-md-row justify-content-center justify-content-md-start" data-aos="fade-down">
-                <a href="#" class="btn btn-warning fw-semibold rounded-pill px-6 py-2">Enter the World <img src="images/ArrowRight.png" class="img-fluid w-100" alt="Pattern Border" style="max-width: 20px;" /></a>
+                <a href="#" class="btn btn-neon-enter fw-semibold rounded-pill px-6 py-2">Enter the World <img src="images/ArrowRight.png" class="img-fluid w-100" alt="Pattern Border" style="max-width: 20px;" /></a>
                 <a href="#" class="btn btn-outline-light fw-semibold rounded-pill px-4 py-2">Scan, learn, and become part of the cultural journey</a>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default class HomePage {
                 <p class="text-black mb-3" style="font-family: 'Quicksand', sans-serif;">
                   Start by using a QR-ready phone and be walked effortlessly into wayang! Our Arjuna Scanner recognizes any wayang, shows its backstory in an instant, and even helps spark a battle in our exclusive digital battle game.
                 </p>
-                <a href="#" class="btn-neon-green">Try It Now</a>
+                <a href="#/predic" class="btn-neon-green">Try It Now</a>
 
                 <!-- Dekorasi: Bintang -->
                 <img src="images/decoration-how-info-4.png" alt="star" class="position-absolute" style="top: -20px; left: -20px; width: 55px;">
@@ -204,14 +204,6 @@ export default class HomePage {
 
     </div>
   </div>
-
-    <footer class="footer-red text-center text-white mt-5 px-3 py-4" data-aos="fade-down">
-    <p class="mb-3">
-      At Arjuna, we believe tradition doesn’t belong in the past — it deserves to grow with the future. 
-      Through technology, we’re not just preserving culture, but making it meaningful, playable, and alive for the next generation.
-    </p>
-    <small>© 2025 Arjuna Project. All rights reserved</small>
-  </footer>
 
 </section>
 

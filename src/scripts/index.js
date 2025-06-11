@@ -1,5 +1,6 @@
 import '../styles/styles.css';
 import '../styles/home.css';
+import '../styles/register.css';
 
 import App from './pages/app';
 
