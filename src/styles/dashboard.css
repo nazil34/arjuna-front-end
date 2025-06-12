@@ -1,0 +1,66 @@
+.dashboard-section {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.shadow-box {
+  border: 4px solid #000;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 5px 5px 0 #000;
+}
+
+.bg-orange {
+  background-color: #f05423 !important;
+}
+
+.bg-blue {
+  background-color: #245af2 !important;
+}
+
+.character-card {
+  border: 2px solid #000;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+  height: 100%;
+  box-shadow: 4px 4px 0 #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px; /* tinggi konsisten */
+  cursor: pointer;   /* memberi isyarat klik */
+}
+
+.character-img {
+  max-height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.character-name {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: #000;
+  background: #3b82f6;
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+}
+
+.character-card.locked {
+  background: #e0e0e0;
+  border-style: dashed;
+}
+
+.character-card.locked .locked-icon {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}

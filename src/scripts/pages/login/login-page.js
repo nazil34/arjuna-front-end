@@ -6,8 +6,6 @@ export default class LoginPage {
 
     <section class="register-section py-5">
   <div class="container">
-
-    
     
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-6" data-aos="fade-down">
@@ -16,7 +14,6 @@ export default class LoginPage {
             <img src="images/star.png" alt="Star Icon" class="icon-img">
           </div>
 
-          
            <div class="icon-circle mb-2">
             <img src="images/greencircle.png" alt="Icon" class="icon-circle">
           </div>

@@ -14,7 +14,7 @@ const LoginPresenter = {
     }
 
     loginBtn.disabled = true;
-    loginBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Logging in...`;
+    loginBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Continue the Adventure...`;
 
     try {
       const response = await API.login(email, password);
@@ -22,7 +22,7 @@ const LoginPresenter = {
       if (response.success) {
         localStorage.setItem('token', response.token); // Simpan token di localStorage
         alert('🎉 Login berhasil!');
-        window.location.href = '#/'; // Redirect ke halaman utama
+        window.location.href = '#/dashboard'; // Redirect ke halaman Dashboard
       } else {
         alert(`⚠️ Gagal login: ${response.message}`);
       }
