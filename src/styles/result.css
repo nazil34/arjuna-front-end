@@ -1,0 +1,65 @@
+.result {
+    color :#C6F806;
+}
+
+/* Warna dan tampilan utama */
+.funfact-section {
+  background-color: #000;
+  color: white;
+  position: relative;
+}
+
+.title-text {
+  color: #C6F806;
+}
+
+/* Kartu besar teks */
+.custom-card {
+  background-color: #4065F6;
+  border: 2px solid white;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+
+  /* Tambahan efek shadow putih */
+   box-shadow: 12px 0 20px rgba(255, 255, 255, 0.4), 6px 0 0 white;
+}
+/* Kartu besar teks */
+.custom-img {
+  background-color: #4065F6;
+  border: 2px solid white;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+
+  /* Tambahan efek shadow putih */
+   box-shadow: 12px 0 20px rgba(38, 58, 208, 0.4), 6px 0 0 white;
+}
+
+
+/* Gambar ikon bintang */
+.icon-star {
+  height: 65px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Kartu gambar Arjuna */
+.image-card {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.image-card img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* Tombol nama */
+.image-card .btn {
+  background-color: #1d4ed8;
+  border: none;
+  border-radius: 25px;
+}
+

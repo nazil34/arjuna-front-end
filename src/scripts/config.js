@@ -1,5 +1,5 @@
 const CONFIG = {
-  BASE_URL: 'API_BASE_URL',
+  BASE_URL: 'https://back-end-js.vercel.app',
 };
 
 export default CONFIG;

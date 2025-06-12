@@ -236,3 +236,17 @@ h1, h2, h3, .brand-name {
 footer {
   background-color: #000;
 }
+
+
+
+/* predic style */
+
+#predic {
+  box-shadow: 6px 6px 0px black; /* Bayangan tebal hitam kanan bawah */
+  transition: box-shadow 0.3s ease;
+}
+
+#predic:hover {
+  box-shadow: 8px 8px 0px black; /* Efek interaktif saat hover */
+}
+/* predic style */

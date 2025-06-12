@@ -13,7 +13,7 @@ export default class HomePage {
               </h1>
               
               <div class="d-flex gap-3 flex-column flex-md-row justify-content-center justify-content-md-start" data-aos="fade-down">
-                <a href="#" class="btn btn-neon-enter fw-semibold rounded-pill px-6 py-2">Enter the World <img src="images/ArrowRight.png" class="img-fluid w-100" alt="Pattern Border" style="max-width: 20px;" /></a>
+                <a href="#/predict" class="btn btn-neon-enter fw-semibold rounded-pill px-6 py-2">Enter the World <img src="images/ArrowRight.png" class="img-fluid w-100" alt="Pattern Border" style="max-width: 20px;" /></a>
                 <a href="#" class="btn btn-outline-light fw-semibold rounded-pill px-4 py-2">Scan, learn, and become part of the cultural journey</a>
               </div>
             </div>
@@ -38,7 +38,7 @@ export default class HomePage {
             <!-- Icon atas -->
             <img src="images/star.png" class="position-absolute top-0 start-50 translate-middle-y" style="height: 65px;" alt="Star Icon">
            
-            <h2 class="fw-bold text-gradient mb-3">Wayang in the Digital Era – Preserving What’s Being Forgotten</h2>
+            <h2 class="fw-bold  mb-3">Wayang in the Digital Era – Preserving What’s Being Forgotten</h2>
             <p class="mb-0">
               Interest among younger generations in wayang is steadily declining due to the lack of engaging and easy-to-understand learning methods—even 75% of wayang characters are at risk of being forgotten within a generation.
               Arjuna offers an interactive learning experience with storytelling, character recognition through images, and educational battle games.
@@ -59,11 +59,11 @@ export default class HomePage {
                 Discover Wayang with Arjuna –<br>Scan, Learn and Play
               </h2>
 
-              <div class="p-4 rounded-4 bg-orange border border-4 border-black position-relative shadow-black" style="max-width: 420px;" data-aos="fade-down">
+              <div id="predic" class="p-4 rounded-4 bg-orange border border-4 border-black position-relative shadow-black" style="max-width: 420px;" data-aos="fade-down">
                 <p class="text-black mb-3" style="font-family: 'Quicksand', sans-serif;">
                   Start by using a QR-ready phone and be walked effortlessly into wayang! Our Arjuna Scanner recognizes any wayang, shows its backstory in an instant, and even helps spark a battle in our exclusive digital battle game.
                 </p>
-                <a href="#/predic" class="btn-neon-green">Try It Now</a>
+                <a href="#/predict" class="btn-neon-green">Try It Now</a>
 
                 <!-- Dekorasi: Bintang -->
                 <img src="images/decoration-how-info-4.png" alt="star" class="position-absolute" style="top: -20px; left: -20px; width: 55px;">
