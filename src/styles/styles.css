@@ -235,6 +235,10 @@ h1, h2, h3, .brand-name {
 
 footer {
   background-color: #000;
+  margin-bottom: 2rem; 
+  padding: 1rem 2rem; /* Atas/bawah 1rem, kanan/kiri 2rem */
+  margin: 2rem auto;
+  
 }
 
 
