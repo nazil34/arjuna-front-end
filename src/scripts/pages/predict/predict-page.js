@@ -49,7 +49,7 @@ export default class PredictPage {
                 <!-- Loading -->
                 <div id="loading-indicator" class="text-center mt-3" style="display: none;">
                   <div class="spinner-border text-dark" role="status"></div>
-                  <p class="mt-2">Summoning character... please wait</p>
+                  <p class="mt-2">Reading the sacred shadows...please wait</p>
                 </div>
 
                 <!-- Dekorasi -->

@@ -2,6 +2,7 @@ export default class HomePage {
   async render() {
     return `
 
+
       <section id="background" class="hero-section bg-black text-white py-5 position-relative overflow-hidden">
         <div class="container">
           <div class="row align-items-center">
@@ -38,7 +39,7 @@ export default class HomePage {
             <!-- Icon atas -->
             <img src="images/star.png" class="position-absolute top-0 start-50 translate-middle-y" style="height: 65px;" alt="Star Icon">
            
-            <h2 class="fw-bold  mb-3">Wayang in the Digital Era – Preserving What’s Being Forgotten</h2>
+            <h2 class="fw-bold  mb-3" wayang>Wayang in the Digital Era – Preserving What’s Being Forgotten</h2>
             <p class="mb-0">
               Interest among younger generations in wayang is steadily declining due to the lack of engaging and easy-to-understand learning methods—even 75% of wayang characters are at risk of being forgotten within a generation.
               Arjuna offers an interactive learning experience with storytelling, character recognition through images, and educational battle games.
@@ -212,6 +213,6 @@ export default class HomePage {
   }
 
   async afterRender() {
-    // Bisa tambahkan animasi atau interaksi di sini nanti
+//
   }
 }

@@ -17,6 +17,9 @@
   background-color: #CC6344 !important;
 }
 
+h2[wayang] {
+  color: #C6F806;
+}
 
 .btn-neon-green {
   background-color: #C6F806;
