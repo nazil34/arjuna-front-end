@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   await app.renderPage();
 
   window.addEventListener('hashchange', async () => {
-    await app.renderPage();
     AuthStatus.check(); // ⬅️ Cek ulang setiap hash berubah
+    await app.renderPage();
   });
 
   // Event logout button (delegasi atau langsung)
