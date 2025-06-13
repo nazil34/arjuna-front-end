@@ -12,10 +12,15 @@ const routes = {
   '/register': new RegisterPage(),
   '/signin': new LoginPage(),
   '/predict': new PredictPage(),
+  '/predict/:id': new PredictPage(), // Untuk predict dengan ID
   '/result': new ResultPredictPage(),
+  '/result/:id': new ResultPredictPage(), // Untuk result dengan ID
   '/dashboard': new DashboardPage(),
+  '/dashboard/:id': new DashboardPage(), // Untuk dashboard dengan ID
   '/game': new GamePage(),
+  '/game/:id': new GamePage(), // Untuk game dengan ID
   '/play': new PlayGamePage(),
+  '/play/:id': new PlayGamePage(), // Untuk play dengan ID
 };
 
 export default routes;
