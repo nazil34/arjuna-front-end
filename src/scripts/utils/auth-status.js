@@ -1,33 +1,43 @@
 const AuthStatus = {
-  check() {
-    const token = localStorage.getItem('token');
-    const authButtons = document.getElementById('auth-buttons');
-    const userNav = document.getElementById('user-nav');
-    const publicNav = document.getElementById('public-nav-wrapper');
-    const drawerRegister = document.getElementById('drawer-register');
-    const drawerSignin = document.getElementById('drawer-signin');
-    const currentHash = window.location.hash;
+ check() {
+  const token = localStorage.getItem('token');
+  const currentHash = window.location.hash;
 
-    if (token) {
-      authButtons?.classList.add('d-none');
-      userNav?.classList.remove('d-none');
-      drawerRegister?.classList.add('d-none');
-      drawerSignin?.classList.add('d-none');
-      if (publicNav) {
-        if (currentHash === '#/dashboard' || currentHash === '#/game') {
-          publicNav.classList.add('d-none');
-        } else {
-          publicNav.classList.remove('d-none');
-        }
+  const authButtons = document.getElementById('auth-buttons');
+  const userNav = document.getElementById('user-nav');
+  const publicNav = document.getElementById('public-nav-wrapper');
+
+  const drawerRegister = document.getElementById('drawer-register');
+  const drawerSignin = document.getElementById('drawer-signin');
+
+  // Ketika user login
+  if (token) {
+    authButtons?.classList.add('d-none');         // desktop
+    drawerRegister?.classList.add('d-none');      // mobile
+    drawerSignin?.classList.add('d-none');        // mobile
+
+    userNav?.classList.remove('d-none');
+
+    if (publicNav) {
+        if (token) {
+        authButtons?.classList.add('d-none');
+
+        publicNav.classList.add('d-none');
+      } else {
+        publicNav.classList.remove('d-none');
       }
-    } else {
-      authButtons?.classList.remove('d-none');
-      userNav?.classList.add('d-none');
-      drawerRegister?.classList.remove('d-none');
-      drawerSignin?.classList.remove('d-none');
-      publicNav?.classList.remove('d-none');
     }
-  },
+
+  } else {
+    // Jika belum login
+    authButtons?.classList.remove('d-none');
+    drawerRegister?.classList.remove('d-none');
+    drawerSignin?.classList.remove('d-none');
+    userNav?.classList.add('d-none');
+    publicNav?.classList.remove('d-none');
+  }
+},
+
 
   async confirmLogout() {
     const result = await Swal.fire({

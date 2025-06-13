@@ -22,8 +22,10 @@ function constructRouteFromSegments(pathSegments) {
 }
 
 export function getActivePathname() {
-  return location.hash.replace('#', '') || '/';
+  const hash = location.hash.replace('#', '') || '/';
+  return hash.startsWith('/') ? hash : `/${hash}`;
 }
+
 
 export function getActiveRoute() {
   const pathname = getActivePathname();

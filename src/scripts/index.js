@@ -3,6 +3,8 @@ import '../styles/home.css';
 import '../styles/register.css';
 import '../styles/result.css';
 import '../styles/dashboard.css';
+import '../styles/playgame.css';
+import '../styles/gamepage.css';
 
 import App from './pages/app';
 import AuthStatus from './utils/auth-status'; // ⬅️ Import baru

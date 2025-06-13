@@ -1,0 +1,14 @@
+.game-section {
+  background-color: #111; /* Background gelap sesuai desain */
+  min-height: 100vh;
+}
+
+.intro-box {
+  border-radius: 20px;
+}
+
+.vs-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c6ff00;
+}
