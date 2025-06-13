@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   await app.renderPage();
 
   window.addEventListener('hashchange', async () => {
-    await app.renderPage();
     AuthStatus.check(); // ⬅️ Cek ulang setiap hash berubah
+    await app.renderPage();
   });
 
   // Event logout button (delegasi atau langsung)
@@ -31,5 +31,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       e.preventDefault();
       AuthStatus.confirmLogout();
     }
+
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log('SW registered:', reg))
+      .catch(err => console.log('SW registration failed:', err));
+  });
+}
+
   });
 });
