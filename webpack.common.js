@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -9,11 +10,12 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true, // optional
   },
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg|ico)$/i,
         type: 'asset/resource',
       },
     ],
@@ -24,11 +26,19 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        {
-          from: path.resolve(__dirname, 'public/'),
-          to: path.resolve(__dirname, 'dist/'),
-        },
+        { from: path.resolve(__dirname, 'public/'), to: 'public/' },
       ],
+    }),
+    new WorkboxWebpackPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      runtimeCaching: [{
+        urlPattern: /\.(?:png|jpg|jpeg|svg|js|css|html)$/,
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'assets',
+        },
+      }],
     }),
   ],
 };
